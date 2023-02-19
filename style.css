@@ -1,111 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 :root {
-    font-size: 62.5%;
-    /* 1 rem = 10px */
+  font-size: 62.5%;
+  /* 1 rem = 10px */
 
-    /* ### Primary */
+  /* ### Primary */
 
-    --dCyan: #19a2ae;
-    --vDarkDBlue: #2d3248;
-    --dGBlue: #6a6f81;
+  --dCyan: #19a2ae;
+  --vDarkDBlue: #2d3248;
+  --dGBlue: #6a6f81;
 
-    /* ### Neutral */
+  /* ### Neutral */
 
-    --dGray: #969696;
+  --dGray: #969696;
 }
 
 body {
-    margin: 0;
-    overflow: hidden;
+  margin: 0;
+  overflow: hidden;
 }
 
 .container {
-    min-height: 100vh;
-    background: var(--dCyan);
-    display: grid;
-    place-items: center;
-    z-index: -1;
+  min-height: 100vh;
+  background: var(--dCyan);
+  display: grid;
+  place-items: center;
+  z-index: -1;
 }
 
-
 .container .bg {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container .bg .bgtop {
+  margin-left: -20rem;
+  margin-top: -30rem;
+  width: 80rem;
+  height: 80rem;
+}
+
+.container .bg .bgbottom {
+  margin-left: 80rem;
+  margin-top: 50rem;
+  width: 80rem;
+  height: 80rem;
+}
+
+main {
+  z-index: 1;
+  margin-top: -170rem;
+  margin-left: -20rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  background-color: #fff;
+  border-radius: 2rem 2rem 2rem 2rem;
+}
+
+header img {
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.fotoperfil {
+  margin-top: -5rem;
+  border-radius: 100rem;
+  padding: 2rem;
+}
+
+.fotoperfil img {
+  border-radius: 100rem;
+}
+
+main h1 {
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--vDarkDBlue);
+  margin-top: -0.6rem;
+}
+
+main h1 span {
+  color: var(--dGBlue);
+  font-weight: 400;
+}
+
+main h2 {
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+  color: var(--dGBlue);
+  margin-top: -0.6rem;
+  font-size: 1.4rem;
+}
+
+ul::before {
+  content: "";
+  width: 35rem;
+  height: 0.2rem;
+  background-color: #96969642;
+  position: absolute;
+  top: -2.5rem;
+  left: -6.8rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+ul li {
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--vDarkDBlue);
+  display: grid;
+  text-align: center;
+}
+
+ul li span {
+  font-family: "Kumbh Sans";
+  font-weight: 400;
+  color: var(--dGBlue);
+  font-size: 1.2rem;
+}
+
+.attribution {
+  margin-top: -75rem;
+  margin-left: -24rem;
+  font-family: "Kumbh Sans";
+  font-size: 1.6rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 1400px) {
+  .container .bg .bgtop {
     margin-left: -20rem;
     margin-top: -30rem;
     width: 60rem;
     height: 60rem;
-}
+  }
 
-.container .bg .bgbottom {
-    margin-left: 60rem;
+  .container .bg .bgbottom {
+    margin-left: 70rem;
     margin-top: 30rem;
     width: 60rem;
     height: 60rem;
-}
+  }
 
-main {
+  main {
     z-index: 1;
-    margin-top: -120rem;
-    margin-left: -24rem;
+    margin-top: -115rem;
+    margin-left: -35rem;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
     background-color: #fff;
     border-radius: 2rem 2rem 2rem 2rem;
-}
+  }
 
-header img {
-    border-radius: 2rem 2rem 0rem 0rem;
-}
-
-.fotoperfil{
-    margin-top: -5rem;
-    border-radius: 100rem;
-    padding: 2rem;
-}
-
-.fotoperfil img{
-    border-radius: 100rem;
-}
-
-main h1{
+  .attribution {
+    margin-top: -55rem;
+    margin-left: -35rem;
     font-family: "Kumbh Sans";
-    font-weight: 700;
-    font-size: 1.8rem;
-    color: var(--vDarkDBlue);
-    margin-top: -.6rem;
+    font-size: 1.6rem;
+  }
 }
 
-main h1 span{
-    color: var(--dGBlue);
-    font-weight: 400;
+@media screen and (max-width: 1000px) {
+    .container .bg .bgtop {
+        margin-left: -20rem;
+        margin-top: -30rem;
+        width: 0rem;
+        height: 0rem;
+      }
+    
+      .container .bg .bgbottom {
+        margin-left: 70rem;
+        margin-top: 30rem;
+        width: 0rem;
+        height: 0rem;
+      }
+    
+      main {
+        z-index: 1;
+        margin-top: -30rem;
+        margin-left: 0rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        background-color: #fff;
+        border-radius: 2rem 2rem 2rem 2rem;
+      }
+    
+      .attribution {
+        margin-top: 0rem;
+        margin-left: 0rem;
+        font-family: "Kumbh Sans";
+        font-size: 1.6rem;
+      } 
+
+    .attribution a {
+        color: #fff;
+    }
 }
 
-main h2{
-    font-family: "Kumbh Sans";
-    font-weight: 400;
-    color: var(--dGBlue);
-    margin-top: -.6rem;
-    font-size: 1.4rem;
-}
 
-ul {
- display: flex;
- justify-content: space-between;
- gap: 4rem;
- text-decoration: none;
- list-style: none;
-}
-
-
-
-
-.attribution{
-margin-top: -55rem;
-margin-left: -24rem;
-}
